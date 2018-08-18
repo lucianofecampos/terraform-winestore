@@ -1,5 +1,5 @@
 module "db" {
-  source = "terraform_aws-modules/rds/aws"
+  source = "terraform-aws-modules/rds/aws"
 
   identifier = "hibicode-rds"
 
@@ -13,7 +13,7 @@ module "db" {
   password = "${var.db_password}"
   port = "5432"
 
-  vpc_security_groups_ids = ["${aws_security_group.allow_db_connections.id}"]
+  vpc_security_group_ids = ["${aws_security_group.allow_db_connections.id}"]
 
   maintenance_window = "Thu:03:30-Thu:05:30"
   backup_window = "05:30-06:30"
