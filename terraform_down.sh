@@ -8,4 +8,4 @@ echo "Your public ip address is $MY_PUBLIC_IP_ADDRESS"
 
 echo "Destroing Terraform"
 AWS_PROFILE=terraform \
-terraform destroy -var "my_public_cidr=$MY_PUBLIC_IP_ADDRESS/32"
+terraform destroy -var "my_public_cidr=$MY_PUBLIC_IP_ADDRESS/32" -var "db_password=hibicode"
