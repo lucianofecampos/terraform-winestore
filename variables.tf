@@ -22,3 +22,5 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
+variable "my_public_cidr" {}
+
