@@ -1,10 +1,10 @@
 resource "aws_key_pair" "keypair" {
-  key_name = "hibicode"
+  key_name   = "hibicode"
   public_key = "${file("key/beer_key.pub")}"
 }
 
 resource "aws_instance" "instances" {
-  ami = "${var.aws_linux_ami}"
+  ami           = "${var.aws_linux_ami}"
   instance_type = "${var.instance_type}"
 
   subnet_id = "${element(aws_subnet.public_subnet.*.id, count.index)}"

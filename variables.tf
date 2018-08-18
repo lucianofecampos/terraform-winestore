@@ -4,6 +4,7 @@ variable "cidr_vpc" {
 
 variable "availability_zones" {
   type = "list"
+
   default = [
     "us-east-1a",
     "us-east-1b",
@@ -25,4 +26,3 @@ variable "instance_type" {
 variable "my_public_cidr" {}
 
 variable "db_password" {}
-
