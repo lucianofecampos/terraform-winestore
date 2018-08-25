@@ -1,3 +1,4 @@
 .terraform/
 .idea/
 key/beer_key
+/terraform/key/beer_key
