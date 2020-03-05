@@ -8,8 +8,8 @@ module "db" {
   instance_class    = "db.t2.micro"
   allocated_storage = "100"
 
-  name     = "beerstore"
-  username = "beerstore"
+  name     = "winestore"
+  username = "winestore"
   password = "${var.db_password}"
   port     = "5432"
 

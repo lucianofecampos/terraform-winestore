@@ -1,6 +1,6 @@
 resource "aws_key_pair" "keypair" {
   key_name   = "hibicode"
-  public_key = "${file("key/beer_key.pub")}"
+  public_key = "${file("key/wine_key.pub")}"
 }
 
 resource "aws_instance" "instances" {

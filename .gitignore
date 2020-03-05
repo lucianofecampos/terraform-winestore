@@ -1,4 +1,4 @@
 .terraform/
 .idea/
-key/beer_key
-/terraform/key/beer_key
+key/wine_key
+/terraform/key/wine_key

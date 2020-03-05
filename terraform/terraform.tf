@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "htecweb-beestore"
-    key    = "beerstore-infra"
+    key    = "winestore-infra"
     region = "us-east-1"
   }
 }
